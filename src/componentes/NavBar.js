@@ -1,4 +1,5 @@
 import react from 'react'
+import CartW from './CartW'
 
 export default function NavBar(){
     return(
@@ -6,11 +7,10 @@ export default function NavBar(){
             <nav className="Menu">
                 <label className="logo">Alianza</label>
                 <ul className="Menu_items">
-                    <li className="active"><a href="#">Menú</a></li>
-                    <li><a href="#">Platos</a></li>
-                    <li><a href="#">Congelados</a></li>
-                    <li><a href="#">Packs</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li className="active"><a href='https://www.instagram.com/laalianzareverde'>Pagina de contacto</a></li>
+                    <a>
+                        <CartW></CartW>
+                    </a>
                 </ul>
                 <span className="btn_menu">
                     <i className="fa fa-bars"></i>

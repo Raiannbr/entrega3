@@ -3,6 +3,9 @@ import './App.css';
 import NavBar from './componentes/NavBar';
 import Item from './componentes/item';
 import { element } from 'prop-types';
+import ClassComponent from './componentes/funcional/ClassComponent';
+
+
 function App() {
 
 
@@ -35,27 +38,10 @@ function App() {
 
 const mapItems = ()=> {
   let items = []
- /* for(let index = 0; index < array.length; index++){
-    let item = <Item
-                  id={array[index].id}
-                  title={array[index].title}
-                  description={array[index].description}
-                  bottom={array[index].bottom}
-                  />
-    items.push(item);
-  }*/
-  /*for(let index of array){
-    let item = <Item
-              id={index.id}
-              title={index.title}
-              description={index.description}
-              bottom={index.bottom}
-              />
-            items = [...items,item]
-  }
-  */
+ 
   items = array.map(element => {
     return <Item
+              key={element.id}
               id={element.id} //element es lo mismo que el index en el ej anterior
               title={element.title}
               description={element.description != "description 2" ? element.description: "Esto era el 2"}
@@ -70,6 +56,13 @@ const mapItems = ()=> {
     <div className='container'>
       
       <NavBar/>
+
+
+      <ClassComponent
+      >
+        
+
+      </ClassComponent>
       <div class="row">
       {mapItems()}
       </div>

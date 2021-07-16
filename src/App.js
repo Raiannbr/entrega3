@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
-import NavBar from './componentes/NavBar';
-import Item from './componentes/item';
+import NavBar from './NavBar';
+import Item from './item';
 import { element } from 'prop-types';
 import ClassComponent from './ClassComponent';
 

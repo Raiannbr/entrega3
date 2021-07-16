@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './componentes/NavBar';
 import Item from './componentes/item';
 import { element } from 'prop-types';
-import ClassComponent from './componentes/funcional/ClassComponent';
+import ClassComponent from './ClassComponent';
 
 
 function App() {
